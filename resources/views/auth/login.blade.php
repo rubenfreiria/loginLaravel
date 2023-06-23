@@ -3,6 +3,8 @@
 @section('content')
     <form action="/login" method="POST">
         @csrf
+        <h1>Log in</h1>
+        @include('layouts.partials.messages')
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Username / Email address</label>
             <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

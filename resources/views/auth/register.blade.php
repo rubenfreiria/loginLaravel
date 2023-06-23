@@ -3,6 +3,8 @@
 @section('content')
     <form action="/register" method="POST">
         @csrf
+        <h1>Create account</h1>
+        @include('layouts.partials.messages')
         <div class="form-floating mb-3">
             <input type="email" placeholder="Email" name="email" class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
