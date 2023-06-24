@@ -32,8 +32,7 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+
                 <ul class="navbar-nav me-5 mb-2 mb-lg-0">
 
                     @auth
@@ -53,6 +52,14 @@
                         </li>
                     @endauth
 
+                    @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">Create account</a>
+                        </li>
+                    @endguest
                     <li class="nav-item">
                         <a class="nav-link disabled"></a>
                     </li>
