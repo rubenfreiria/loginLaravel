@@ -9,4 +9,4 @@
 
 ## App de log in y register básica con laravel
 
-- [APP desplegada](<a href="https://loginlaravel-production.up.railway.app/"></a>).
+<a href="https://loginlaravel-production.up.railway.app/">App desplegada</a>
